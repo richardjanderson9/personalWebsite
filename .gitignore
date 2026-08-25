@@ -1,0 +1,135 @@
+
+# -----------------------------
+# Node & Package Manager Files
+# -----------------------------
+node_modules/
+/.pnp
+.pnp.js
+
+# -----------------------------
+# Build & Output Directories
+# -----------------------------
+build/
+dist/
+
+# -----------------------------
+# Test Output & Test Files
+# -----------------------------
+coverage/
+**/__tests__/*
+**/*.test.*
+**/*.spec.*
+**/test/*
+**/tests/*
+!src/test
+!src/tests
+
+# -----------------------------
+# Temporary & Sync Files
+# -----------------------------
+sync-test/
+temp.json
+
+# -----------------------------
+# Logs
+# -----------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------
+# Environment Files
+# -----------------------------
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+# Editor & OS Files
+# -----------------------------
+.DS_Store
+.vscode/settings.json
+
+# -----------------------------
+# Cloud Provider Configs
+# -----------------------------
+# Azure
+.azure/
+local.settings.json
+appsettings.*.json
+*.publishsettings
+PublishProfiles/
+*.pubxml
+azureauth.json
+azure-pipelines*.yml
+# AWS
+.aws/
+aws-config.json
+aws-credentials.json
+.elasticbeanstalk/
+.ebextensions/
+.ebignore
+aws-eb.json
+serverless.yml
+cloudformation.yml
+sam.yml
+*.pem
+credentials.csv
+accessKeys.csv
+# GCP
+.gcp/
+app.yaml
+dispatch.yaml
+cron.yaml
+.gcloudignore
+*-credentials.json
+*-service-account.json
+gcloud-config/
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+.firebaserc
+firebase.json
+
+# -----------------------------
+# GitHub Actions Local/Dev
+# -----------------------------
+.github/.env
+.act
+.actrc
+act-secrets.env
+act-artifact/
+workflow-artifacts/
+.github/act/
+.github-actions-local/
+
+# -----------------------------
+# Miscellaneous
+# -----------------------------
+*test*
+
+# -----------------------------
+# Docker & Cloud/IaaS
+# -----------------------------
+# Docker
+docker-compose.yml
+docker-compose.*.yml
+Dockerfile.*
+.dockerignore
+.docker/
+docker-data/
+docker-volumes/
+docker-logs/
+
+# Cloudflare (WAF, Pages, Workers, etc.)
+.cloudflared/
+cloudflare.log
+cloudflare.env
+wrangler.toml
+wrangler-config.toml
+cf-*
+workers-site/
+dist-worker/
+pages-functions/

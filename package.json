@@ -1,6 +1,6 @@
 {
-  "name": "react-website",
-  "version": "0.9.0",
+  "name": "personalWebsite",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "description": "My personal website built with React, Vite, and Tailwind CSS. It showcases my portfolio, blog, and contact information. The website is designed to be fast, responsive, and user-friendly, providing visitors with an engaging experience. It is configured to sit behind a Cloudflare Proxy/WAF for enhanced security and performance. ",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^5.2.0",
-    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.2",
     "npm-check": "^6.0.1",
     "react": "^19.2.7",
