@@ -12,7 +12,7 @@ RUN npm run build
 
 # --- Production Stage ---
 # Uses official unprivileged image (runs as non-root 'nginx' user automatically)
-FROM nginxinc/nginx-unprivileged:alpine
+FROM nginxinc/nginx-unprivileged:1.30.4-alpine3.24-slim
 
 # Copy the build output
 COPY --from=build /app/build /usr/share/nginx/html
