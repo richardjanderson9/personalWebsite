@@ -2,8 +2,8 @@
   Path: vite.config.js
   Description: Vite configuration file for a React application.
   Author: Richard Anderson.
-  Last Updated: 28-March-2026.
-  Version: 1.1.
+  Last Updated: 13-Sep-2026.
+  Version: 1.1.1
   Note: Streamlined for simplicity.
 */
 import { defineConfig } from 'vite';
@@ -24,7 +24,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
+      '@': resolve(import.meta.dirname, 'src'),
     },
   }
 });
