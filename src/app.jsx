@@ -1,19 +1,27 @@
 /*
   Path: src/app.jsx
-  Description: Main App component for the React application. Streamlined to render only UserInterface.
+  Description: Main App component for the React application. Renders both UserInterface and UserTracking components.
   Author: Richard Anderson.
-  Last Updated: 09-July-2025.
-  Version: 1.2.0.
-  Note: Streamlined to render only UserInterface.
+  Last Updated: 25-September-2026.
+  Version: 1.3.1.
+  Note: Updated with import section comments.
 */
 
-import React from 'react';
+// Import core UI components
 import UserInterface from './assets/js/userInterface.jsx';
+// Temporary: Imports to ensure functionality.
+import UserMonitor from './assets/js/userMonitor.jsx';
+import DeviceChecks from './assets/js/deviceChecks.jsx';
 
 // App Component Definition.
 function App() {
-  return <UserInterface />;
+  return (
+    <>
+      <UserMonitor/>
+      <DeviceChecks/>
+      <UserInterface/>
+    </>
+  );
 }
-
 // Export Component.
 export default App;

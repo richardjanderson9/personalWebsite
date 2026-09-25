@@ -20,6 +20,7 @@ yarn-error.log*
 .env
 .env.*
 !.env.example
+.secrets
 
 # OS & Editor Files
 .DS_Store
