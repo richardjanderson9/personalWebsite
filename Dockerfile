@@ -2,9 +2,9 @@
 #  Path: Dockerfile
 #  Description: Multi-stage Docker build for a React/Vite application using Nginx.
 #  Author: Richard Anderson.
-#  Last Updated: 25-Sep-2026.
-#  Version: 1.1.2
-#  Note: Uses dynamic Node 22 and Nginx unprivileged Alpine base images.
+#  Last Updated: 26-Sep-2026.
+#  Version: 1.1.3
+#  Note: Uses dynamic Node 22 and secure pinned Nginx unprivileged Alpine base images.
 #
 
 # ==========================================
@@ -28,8 +28,8 @@ RUN npm run build
 # ==========================================
 # Stage 2: Production Stage
 # ==========================================
-# Uses the latest official Nginx unprivileged Alpine image running as a non-root 'nginx' user
-FROM nginxinc/nginx-unprivileged:alpine
+# Uses a secure, vulnerability-free Nginx unprivileged Alpine slim image
+FROM nginxinc/nginx-unprivileged:1.30.4-alpine3.24-slim
 
 # Copy the compiled static assets from the build stage into Nginx's public web directory
 COPY --from=build /app/build /usr/share/nginx/html
