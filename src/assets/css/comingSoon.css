@@ -1,25 +1,15 @@
 /*
-  Path: src/assets/css/userInterface.css
-  Description: Styles for the coming soon page.
+  Path: src/assets/css/comingSoon.css
+  Description: Styles for the coming soon page and application layout.
   Author: Richard Anderson
-  Last Updated: 20-June-2026
-  Version: 2.1.0
-  Note: Full-page black background with animated gradient text.
+  Last Updated: 26-September-2026
+  Version: 1.1.0
+  Note: Full-page black background with animated gradient text and navigation styling.
 */
-
-/* Base font and rendering */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #000;
-  color: #fff;
-}
 
 /* Full-viewport centred container */
 .coming-soon-wrapper {
-  min-height: 100vh;
+  min-height: calc(100vh - 4rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,13 +52,6 @@ body {
   animation: typing 3.5s steps(47, end), blink-caret 0.75s step-end infinite;
   max-width: fit-content;
 }
-
-/*
-  Animation compoinents:
-  1. Typing effect: Reveals the text character by character.
-  2. Blinking caret: Simulates a cursor blinking at the end of the text
-  3. Gradient animation: Smoothly shifts the gradient colours across the heading text.
-*/
 
 /* GitHub Button Styling with Gradient Border & Icon */
 .github-button {
