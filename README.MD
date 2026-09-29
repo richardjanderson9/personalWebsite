@@ -1,45 +1,40 @@
-# Richard Anderson — Personal Website
+# Personal Website
 
-> Personal website built with React and Vite. Sits behind a Cloudflare Proxy/WAF.
+The official source code for my personal portfolio and website, hosted live at [richardjanderosn.uk](https://richardjanderosn.uk).
 
-## Quick Start
+## 🚀 Overview
 
-```bash
-npm install
-npm start
+This project is a modern, responsive single-page web application built to showcase my portfolio, projects, photography, and social links. It features a sleek dark-mode aesthetic, smooth scrolling navigation, and a lightweight component-driven architecture designed for high performance.
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React, Vite
+* **Styling:** Custom CSS (Flexbox, smooth scrolling, fixed navigation)
+* **Hosting & Deployment:** Cloudflare Pages / Workers (managed via Wrangler)
+* **Icons:** Lucide React
+
+## 📁 Project Structure
+
+```text
+personalWebsite/
+├── public/
+└── src/
+    ├── app.jsx
+    ├── index.jsx
+    └── assets/
+        ├── css/
+        ├── js/
+        │   ├── data_components/
+        │   └── ui_components/
+        └── media/
 ```
 
-## Scripts
+## 🛡️ Security & Infrastructure
 
-- `npm start` – Start development server
-- `npm test` – Run tests
-- `npm run build` – Build for production
+* **Edge Hosting:** Hosted globally via Cloudflare for low latency and high availability.
+* **SSL/TLS Encryption:** HTTPS encryption enforced at the Cloudflare edge.
+* **Security & Threat Mitigation:** Protected by Cloudflare's built-in web security rules, DDoS mitigation, and firewall capabilities.
 
-## Structure
+## 📄 Author
 
-```
-src/        # Source code
-public/     # Static files
-```
-
-
-## Configure Vultr Container Registry
-
-To deploy or use this project with Vultr Container Registry, set the following secrets in your deployment environment or CI/CD pipeline:
-
-| Secret | Description |
-|---|---|
-| `VULTR_API_KEY` | Your Vultr API key |
-| `VULTR_REGISTRY_URL` | Registry URL (e.g. `us-east1.vultrcr.com`) |
-| `VULTR_REGISTRY_NAME` | Registry name |
-| `VULTR_USER` | Vultr username (UUID format) |
-
-Do not commit these values to version control.
-
-## Security
-
-See [SECURITY.md](SECURITY.md) for the security policy and supported versions.
-
-## License
-
-MIT — see [LICENSE](LICENSE)
+* **Richard Anderson**
