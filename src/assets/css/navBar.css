@@ -2,40 +2,41 @@
   Path: src/assets/css/navBar.css
   Description: Styles for the navigation bar.
   Author: Richard Anderson
-  Last Updated: 26-September-2026
-  Version: 1.5.0
-  Note: Contains styles for the navigation bar including brand offset and underline hover effects.
+  Last Updated: 29-September-2026
+  Version: 1.5.1
+  Note: Contains simplified styles with fixed positioning and z-index 1.
 */
 
-/* Navbar Container */
 .site-navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
   width: 100%;
+  z-index: 1;
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar-inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 0 2rem;
   height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Brand / Logo Styling */
+.navbar-brand,
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .navbar-brand {
   font-size: 1.15rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -43,10 +44,8 @@
   color: #ff758c;
 }
 
-/* Navigation Links List */
 .navbar-links {
   display: flex;
-  align-items: center;
   gap: 1.5rem;
   list-style: none;
   margin: 0;
@@ -56,27 +55,20 @@
 .navbar-link {
   font-size: 0.95rem;
   font-weight: 500;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.5rem 0.25rem;
   position: relative;
-  transition: color 0.25s ease;
+  padding: 0.25rem 0;
 }
 
 /* Center-Out Underline Hover Effect */
 .navbar-link::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 50%;
   width: 0;
   height: 2px;
   background-color: #ffffff;
   transition: width 0.3s ease, left 0.3s ease;
-}
-
-.navbar-link:hover {
-  color: #ffffff;
 }
 
 .navbar-link:hover::after {

@@ -1,0 +1,32 @@
+/*
+  Path: src/assets/css/socials.css
+  Description: Styles for the social links section.
+  Author: Richard Anderson
+  Last Updated: 29-September-2026
+  Version: 1.5.1
+  Note: Contains styles for the social links section including hero and about snippets.
+*/
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.socials-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.socials-placeholder-text {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}

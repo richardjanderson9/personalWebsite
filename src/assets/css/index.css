@@ -2,18 +2,19 @@
   Path: src/assets/css/index.css
   Description: Global styles for the React application.
   Author: Richard Anderson
-  Last Updated: 25-September-2026
-  Version: 1.1.0
+  Last Updated: 29-September-2026
+  Version: 1.2.0
 */
+
+/* Enable smooth scrolling and account for fixed navbar height */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
 
 /* Global box-sizing reset for predictable layouts */
 *, *::before, *::after {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 /* Base font and rendering */

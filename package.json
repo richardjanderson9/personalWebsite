@@ -1,6 +1,6 @@
 {
   "name": "personalWebsite",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "private": false,
   "type": "module",
   "description": "My personal website built with React, Vite, and Tailwind CSS. It showcases my portfolio, blog, and contact information. The website is designed to be fast, responsive, and user-friendly, providing visitors with an engaging experience. It is configured to sit behind a Cloudflare Proxy/WAF for enhanced security and performance.",
@@ -10,6 +10,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1143.0",
+    "lucide-react": "^1.48.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },

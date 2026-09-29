@@ -5,6 +5,7 @@
   Last Updated: 26-September-2026.
 */
 
+// Import React library for creating components.
 import React from 'react';
 
 const ComingSoon = () => {
